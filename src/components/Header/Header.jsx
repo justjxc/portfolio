@@ -8,12 +8,13 @@ const Header = () => {
 	const smoothScroll = e => {
 		e.preventDefault();
 
-		const target = document.getElementById(e.target.getAttribute('href').slice(1));
+		const target = e.target.getAttribute('href');
 
-		target.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start',
-		});
+		if (target)
+			document.getElementById(target.slice(1)).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			});
 	};
 
 	useEffect(() => {
