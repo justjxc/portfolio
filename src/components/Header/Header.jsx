@@ -5,6 +5,17 @@ import cn from 'classnames';
 const Header = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
 
+	const smoothScroll = e => {
+		e.preventDefault();
+
+		const target = document.getElementById(e.target.id.slice(1));
+
+		target.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+	};
+
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
 			setIsScrolled(window.scrollY > 100);
@@ -18,7 +29,7 @@ const Header = () => {
 				'fixed bg-indigo-950 p-4': isScrolled,
 			})}
 		>
-			<nav className='text-4xl text-neutral-200 max-w-[500px]'>
+			<nav onClick={smoothScroll} className='text-4xl text-neutral-200 max-w-[500px]'>
 				<ul className='list-none h-full flex justify-between items-center gap-32'>
 					<li className=''>
 						<a href='#'>Home</a>
