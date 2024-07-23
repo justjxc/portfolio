@@ -8,7 +8,9 @@ const Header = () => {
 	const smoothScroll = e => {
 		e.preventDefault();
 
-		const target = document.getElementById(e.target.id.slice(1));
+		const target = document.getElementById(e.target.getAttribute('href').slice(1));
+
+		console.log(e.target.getAttribute('href'));
 
 		target.scrollIntoView({
 			behavior: 'smooth',
@@ -32,7 +34,7 @@ const Header = () => {
 			<nav onClick={smoothScroll} className='text-4xl text-neutral-200 max-w-[500px]'>
 				<ul className='list-none h-full flex justify-between items-center gap-32'>
 					<li className=''>
-						<a href='#'>Home</a>
+						<a href='#home'>Home</a>
 					</li>
 
 					<li className=''>
