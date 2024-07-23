@@ -29,8 +29,8 @@ const Header = () => {
 				'fixed bg-indigo-950 p-4': isScrolled,
 			})}
 		>
-			<nav onClick={smoothScroll} className='text-4xl text-neutral-200 max-w-[500px]'>
-				<ul className='list-none h-full flex justify-between items-center gap-32'>
+			<nav className='text-4xl text-neutral-200 max-w-[500px]'>
+				<ul onClick={smoothScroll} className='list-none h-full flex justify-between items-center gap-32'>
 					<li className=''>
 						<a href='#home'>Home</a>
 					</li>
