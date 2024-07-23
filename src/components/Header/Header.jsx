@@ -10,8 +10,6 @@ const Header = () => {
 
 		const target = document.getElementById(e.target.getAttribute('href').slice(1));
 
-		console.log(e.target.getAttribute('href'));
-
 		target.scrollIntoView({
 			behavior: 'smooth',
 			block: 'start',
