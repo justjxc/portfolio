@@ -12,7 +12,7 @@ const Projects = () => {
 	};
 
 	return (
-		<section className='w-screen  bg-slate-100 py-72'>
+		<section id='projects' className='w-screen  bg-slate-100 py-72'>
 			<Layout>
 				<div className='w-full h-full'>
 					<div className='flex flex-col w-full'>

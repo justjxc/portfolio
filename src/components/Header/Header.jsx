@@ -25,11 +25,11 @@ const Header = () => {
 					</li>
 
 					<li className=''>
-						<a href='#'>Projects</a>
+						<a href='#projects'>Projects</a>
 					</li>
 
 					<li className=''>
-						<a href='#'>Contact</a>
+						<a href='#contact'>Contact</a>
 					</li>
 				</ul>
 			</nav>
