@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+
+	&:active {
+		color: currentColor;
+	}
+
+	&:visited {
+		color: currentColor;
+	}
+}
