@@ -6,9 +6,9 @@ import reactImage3 from '../../../assets/img/project-react-3.png';
 const TabsReact = () => {
 	return (
 		<ul className='grid grid-cols-3 w-full h-full gap-12'>
-			<TabsItem src={reactImage1} href='#' />
-			<TabsItem src={reactImage2} href='#' />
-			<TabsItem src={reactImage3} href='#' />
+			<TabsItem src={reactImage1} href='https://justjxc.github.io/react-weather/' />
+			<TabsItem src={reactImage2} href='https://justjxc.github.io/react-notes/' />
+			<TabsItem src={reactImage3} href='https://justjxc.github.io/react-tasks/' />
 		</ul>
 	);
 };
