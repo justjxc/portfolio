@@ -1,7 +1,7 @@
 import TabsItem from '../TabsItem/TabsItem';
-import reactImage1 from '../../../assets/img/project-react-1.png';
-import reactImage2 from '../../../assets/img/project-react-2.png';
-import reactImage3 from '../../../assets/img/project-react-3.png';
+import reactImage1 from '../../../assets/img/project-react-1.jpg';
+import reactImage2 from '../../../assets/img/project-react-2.jpg';
+import reactImage3 from '../../../assets/img/project-react-3.jpg';
 
 const TabsReact = () => {
 	return (

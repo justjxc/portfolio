@@ -1,8 +1,8 @@
-import layoutImage1 from '../../../assets/img/project-layout-1.png';
-import layoutImage2 from '../../../assets/img/project-layout-2.png';
-import layoutImage3 from '../../../assets/img/project-layout-3.png';
-import layoutImage4 from '../../../assets/img/project-layout-4.png';
-import layoutImage5 from '../../../assets/img/project-layout-5.png';
+import layoutImage1 from '../../../assets/img/project-layout-1.jpg';
+import layoutImage2 from '../../../assets/img/project-layout-2.jpg';
+import layoutImage3 from '../../../assets/img/project-layout-3.jpg';
+import layoutImage4 from '../../../assets/img/project-layout-4.jpg';
+import layoutImage5 from '../../../assets/img/project-layout-5.jpg';
 import TabsItem from '../TabsItem/TabsItem';
 
 const TabsLayouts = () => {
