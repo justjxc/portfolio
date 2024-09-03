@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
+	safelist: ['text-custom-color-vk', 'text-custom-color-tg', 'hover:text-custom-color-vk', 'hover:text-custom-color-tg'],
 	theme: {
 		extend: {
 			boxShadow: {
@@ -21,6 +22,13 @@ module.exports = {
 						transform: 'translateY(-25%)',
 						animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
 					},
+				},
+			},
+
+			colors: {
+				'custom-color': {
+					vk: '#0077FF',
+					tg: '#24A1DE',
 				},
 			},
 		},
