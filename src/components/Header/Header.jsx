@@ -25,7 +25,7 @@ const Header = () => {
 
 	return (
 		<header
-			className={cn('top-0 left-0 w-full flex justify-center items-center p-6 border-b-neutral-300 border-b', {
+			className={cn('top-0 left-0 w-full flex justify-center items-center p-6 border-b-neutral-300 border-b z-50', {
 				absolute: !isScrolled,
 				'fixed bg-indigo-950 p-4': isScrolled,
 			})}
