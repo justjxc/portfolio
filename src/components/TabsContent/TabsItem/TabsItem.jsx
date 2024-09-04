@@ -1,8 +1,12 @@
-const TabsItem = ({ src, href }) => {
+const TabsItem = ({ src, href, caption }) => {
 	return (
-		<li className='shadow-lg transition-transform duration-300 hover:scale-105'>
+		<li className='group'>
 			<a href={href} rel='noreferrer' target='_blank' className='rounded-3xl overflow-hidden shadow-lg'>
-				<img src={src} alt='project preview' className='' />
+				<figure>
+					<img src={src} alt='project preview' className='shadow-lg transition-transform duration-300 group-hover:scale-105' />
+
+					{caption && <figcaption className='flex justify-center items-center mt-5 text-3xl text-neutral-700'>{caption}</figcaption>}
+				</figure>
 			</a>
 		</li>
 	);

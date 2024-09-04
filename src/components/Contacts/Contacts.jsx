@@ -23,7 +23,7 @@ const Contacts = () => {
 			{links.map(link => {
 				return (
 					<li key={link.id} className='pointer'>
-						<a href={link.href} rel='noreferrer' target='_blank' className={`transition-colors duration-300 hover:${link.color} `}>
+						<a href={link.href} rel='noreferrer' target='_blank' className={`transition-colors duration-300 hover:${link.color}`}>
 							<FontAwesomeIcon icon={link.icon} size='2x' className={`text-current`} />
 						</a>
 					</li>

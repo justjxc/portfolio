@@ -32,15 +32,15 @@ const Header = () => {
 		>
 			<nav className='text-4xl text-neutral-200 max-w-[500px]'>
 				<ul onClick={smoothScroll} className='list-none h-full flex justify-between items-center gap-32'>
-					<li className=''>
+					<li className='hover:text-amber-600 transition-colors duration-300'>
 						<a href='#home'>Home</a>
 					</li>
 
-					<li className=''>
+					<li className='hover:text-amber-600 transition-colors duration-300'>
 						<a href='#projects'>Projects</a>
 					</li>
 
-					<li className=''>
+					<li className='hover:text-amber-600 transition-colors duration-300'>
 						<a href='#contact'>Contact</a>
 					</li>
 				</ul>

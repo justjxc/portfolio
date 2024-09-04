@@ -6,13 +6,42 @@ import layoutImage5 from '../../../assets/img/project-layout-5.jpg';
 import TabsItem from '../TabsItem/TabsItem';
 
 const TabsLayouts = () => {
+	const PROJECTS = [
+		{
+			id: 0,
+			src: layoutImage1,
+		},
+
+		{
+			id: 1,
+			src: layoutImage2,
+			href: 'https://justjxc.github.io/layout-taster/',
+		},
+
+		{
+			id: 2,
+			src: layoutImage3,
+			href: 'https://justjxc.github.io/lauout-building/',
+		},
+
+		{
+			id: 3,
+			src: layoutImage4,
+			href: 'https://justjxc.github.io/layout-koin/',
+		},
+
+		{
+			id: 4,
+			src: layoutImage5,
+			href: 'https://justjxc.github.io/layout-tasteEat/',
+		},
+	];
+
 	return (
 		<ul className='grid grid-cols-3 w-full h-full gap-12'>
-			<TabsItem src={layoutImage1} href='https://justjxc.github.io/layout-thrive/' />
-			<TabsItem src={layoutImage2} href='https://justjxc.github.io/layout-taster/' />
-			<TabsItem src={layoutImage3} href='https://justjxc.github.io/lauout-building/' />
-			<TabsItem src={layoutImage4} href='https://justjxc.github.io/layout-koin/' />
-			<TabsItem src={layoutImage5} href='https://justjxc.github.io/layout-tasteEat/' />
+			{PROJECTS.map(project => {
+				return <TabsItem key={project.id} src={project.src} href={project.href} />;
+			})}
 		</ul>
 	);
 };
