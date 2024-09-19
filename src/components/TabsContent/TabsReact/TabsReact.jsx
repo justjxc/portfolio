@@ -2,28 +2,31 @@ import TabsItem from '../TabsItem/TabsItem';
 import reactImage1 from '../../../assets/img/project-react-1.jpg';
 import reactImage2 from '../../../assets/img/project-react-2.jpg';
 import reactImage3 from '../../../assets/img/project-react-3.jpg';
+import { useTranslation } from 'react-i18next';
 
 const TabsReact = () => {
+	const { t } = useTranslation();
+
 	const PROJECTS = [
 		{
 			id: 0,
 			src: reactImage1,
 			href: 'https://justjxc.github.io/react-weather/',
-			caption: 'A weather app',
+			caption: t('weatherAppName'),
 		},
 
 		{
 			id: 1,
 			src: reactImage2,
 			href: 'https://justjxc.github.io/react-notes/',
-			caption: 'Note taking app',
+			caption: t('noteTakingAppName'),
 		},
 
 		{
 			id: 2,
 			src: reactImage3,
 			href: 'https://justjxc.github.io/react-tasks/',
-			caption: 'Task manager app',
+			caption: t('taskManagerAppName'),
 		},
 	];
 
