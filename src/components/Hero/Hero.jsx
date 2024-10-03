@@ -1,9 +1,18 @@
+import { HiOutlineChevronDown } from 'react-icons/hi2';
 import Layout from '../Layout/Layout';
 import SkillsList from '../SkillsList/SkillsList';
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
 	const { t } = useTranslation();
+
+	const handleClick = e => {
+		e.preventDefault();
+
+		const targetID = e.target.getAttribute('href').slice(1);
+
+		document.getElementById(targetID).scrollIntoView({ behavior: 'smooth', block: 'start' });
+	};
 
 	return (
 		<section id='home' className='w-screen h-screen bg-gradient-to-tl from-black to-indigo-950 text-neutral-200'>
@@ -15,6 +24,16 @@ const Hero = () => {
 					</div>
 
 					<SkillsList />
+				</div>
+
+				<div className='absolute w-full left-0 bottom-10 flex flex-col justify-center items-center'>
+					<a
+						href='#projects'
+						onClick={handleClick}
+						className='text-neutral-400 cursor-pointer transition-all duration-300 ease-in-out hover:translate-y-4 hover:text-white'
+					>
+						<HiOutlineChevronDown size={36} className='text-current pointer-events-none' />
+					</a>
 				</div>
 			</Layout>
 		</section>
