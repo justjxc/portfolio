@@ -6,7 +6,7 @@ const SkillsList = () => {
 	const iconClassName = 'w-full h-full';
 
 	return (
-		<ul className='flex justify-between items-center gap-12 mt-60 '>
+		<ul className='grid grid-cols-3 sm:flex sm:justify-between sm:items-center gap-12 mt-40 sm:mt-60 '>
 			<li className={liClassName}>
 				<SiHtml5 color='#e34c26' className={iconClassName} />
 			</li>

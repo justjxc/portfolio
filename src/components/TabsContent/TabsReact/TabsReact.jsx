@@ -31,7 +31,7 @@ const TabsReact = () => {
 	];
 
 	return (
-		<ul className='grid grid-cols-3 w-full h-full gap-12'>
+		<ul className='grid grid-cols-1 w-full h-full gap-12 sm:grid-cols-2 md:grid-cols-3'>
 			{PROJECTS.map(project => {
 				return <TabsItem key={project.id} src={project.src} href={project.href} caption={project.caption} />;
 			})}
